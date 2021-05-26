@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="scoreTafel">
+        <div id="userLabel" class="user">User</div>
+        <div id="computerLabel" class="computer">Computer</div>
+        <span id="userScore">0</span>: <span id="computerScore">0</span>
+    </div>
+    <div class="result">
+        <p>Paper covers rock. You win!</p>
+    </div>
+    <div class="rps-container">
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="./assets/img/icons8-hand-rock-100.png" alt="">
+            </div>
+        </div>
+
+        <div class="choices" id="scissor">
+            <div class="choice">
+                <img src="./assets/img/icons8-hand-scissors-100.png" alt="">
+            </div>
+        </div>
+
+        <div class="choices">
+            <div class="choice" id="paper">
+                <img src="./assets/img/icons8-hand-100.png" alt="">
+            </div>
+        </div>
+    </div>
+    <p id="callToAction">Make your move!</p>
+
+    <div id="restart" onclick="restart()">Restart</div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

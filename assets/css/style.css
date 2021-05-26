@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #201f28;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+header {
+    background-color: rgb(122, 226, 212);
+    padding: 30px;
+}
+
+header h1 {
+    color: #222224;
+    text-align: center;
+}
+
+.scoreTafel {
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 35%;
+    margin: 25px auto;
+    color: white;
+    font-size: 2rem;
+    padding: 13px 23px;
+    text-align: center;
+}
+
+.user, .computer {
+    background: #e2584d;
+    color: white;
+    font-size: 1rem;
+    padding: 3px 12px;
+    width: 50%;
+}
+
+#userLabel {
+
+    transform: translate(-62%,118%);
+    border-radius: 5px;
+}
+
+#computerLabel {
+    transform: translateX(162%);
+    border-radius: 5px;
+}
+
+.rps-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4%;
+}
+
+.choices {
+    border: 4px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.choices:hover {
+    background-color: tomato;
+}
+
+/*--------------------------------------------------Später konfigurieren--------------------------------------*/
+p{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.result p {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 4%;
+}
+
+/*-----------------------------------------------colors for win, loose or draw------------------------------*/
+
+.greenWins {
+    border: 6px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+    border-radius: 50%;
+}
+
+.redLoose {
+    border: 6px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+    border-radius: 50%;
+}
+
+.grayDraw {
+    border: 6px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+    border-radius: 50%;
+}
+
+#restart {
+    width: 140px;
+    height: 40px;
+    background-color: turquoise;
+    color: black;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: 0;
+    left: 50%;
+    border-radius: 5px;
+}
